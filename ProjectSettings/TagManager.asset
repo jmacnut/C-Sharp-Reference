@@ -6,6 +6,8 @@ TagManager:
   tags:
   - ColoredPlayer
   - OPlayer
+  - CB_Player
+  - CB_Powerup
   layers:
   - Default
   - TransparentFX

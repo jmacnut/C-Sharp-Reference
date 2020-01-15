@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Item
+public class Itemx
 {
    public int itemID;
    public string itemName;
@@ -13,7 +13,7 @@ public class Item
 
 public class Arrays_IterateObjects : MonoBehaviour
 {
-   public Item[] itemsArray = new Item[5];
+   public Itemx[] itemsArray = new Itemx[5];
    public int selectedIndex;
 
    // Start is called before the first frame update
