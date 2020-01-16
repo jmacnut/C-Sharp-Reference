@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class GameManagerLists : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   // List (dynamic)
+   public List<GameObject> enemiesToSpawn = new List<GameObject>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   // Array
+   public GameObject[] objectsToSpawn = new GameObject[5];
+
+
+   void Start()
+   {
+      // List
+      //enemiesToSpawn.Add(new GameObject);
+      enemiesToSpawn[2].name = "Kylo Ren";
+
+      //accessed the same way
+      objectsToSpawn[2].name = "Me";
+   }
+
 }
