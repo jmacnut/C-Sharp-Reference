@@ -5,13 +5,13 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
    // to display the enemy count
-   private UIManager _uiManager;
+   private StaticUIManager _uiManager;
 
    // called by Instantiate() for enemy
    public void OnEnable()
    {
-      SpawnManager.enemyCount++;
-      _uiManager = GameObject.Find("UI Manager").GetComponent <UIManager>();
+      StaticSpawnManager.enemyCount++;
+      _uiManager = GameObject.Find("UI Manager").GetComponent <StaticUIManager>();
       _uiManager.UpdateEnemyCount();
 
       Die();
@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour
 
    public void OnDisable()
    {
-      SpawnManager.enemyCount--;
+      StaticSpawnManager.enemyCount--;
       _uiManager.UpdateEnemyCount();
    }
 

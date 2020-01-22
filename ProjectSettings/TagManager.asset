@@ -8,6 +8,7 @@ TagManager:
   - OPlayer
   - CB_Player
   - CB_Powerup
+  - Cube
   layers:
   - Default
   - TransparentFX
